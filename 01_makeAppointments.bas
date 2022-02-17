@@ -12,7 +12,7 @@ Dim wksSheet As Worksheet
 'dteEnd: End date for sprint -> Sheet1.Cells(lngRow, 2).Value
 'strSprint: Designation for sprint -> Sheet1.Cells(lngRow, 3).Value
 
-Set wksSheet = Sheet1
+Set wksSheet = Sheet1 'Name of the worksheet 
 
 With wksSheet
   lngRowMax = .UsedRange.Rows.Count
@@ -34,7 +34,7 @@ Dim appOutlook, objAppointment As Object
 Set appOutlook = CreateObject("Outlook.Application")
 Set objAppointment = appOutlook.CreateItem(1)
 
-With objTermin
+With objAppointment
   .MeetingStatus = 1
   .AllDayEvent = True
   .Start = dteStart
