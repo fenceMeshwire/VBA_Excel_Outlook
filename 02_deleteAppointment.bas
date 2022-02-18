@@ -1,7 +1,7 @@
 Option Explicit
 
 ' Please refer to the program 01_makeAppointments.bas within this repository
-' The name tag is created in the eMail subject
+' The name tag must have been previously created in the eMail subject, e.g. "[L&H]"
 ' Activate the reference library "Microsoft Outlook XY.0 Object Library", depending on your installed office version.
 
 Sub deleteAppointments()
