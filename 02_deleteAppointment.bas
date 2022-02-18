@@ -30,5 +30,6 @@ Next lngIndex
 Exit Sub
 
 deleteAppointments_Error:
-          MsgBox "An error occured. Program finished."
+MsgBox "An error occured. Program finished."
+
 End Sub
