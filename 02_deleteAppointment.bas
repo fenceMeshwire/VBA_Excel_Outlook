@@ -1,6 +1,6 @@
 Option Explicit
 
-' Please refer to the program 01_makeAppointments.bas
+' Please refer to the program 01_makeAppointments.bas within this repository
 ' The name tag is created in the eMail subject
 ' Activate the reference library "Microsoft Outlook XY.0 Object Library", depending on your installed office version.
 
