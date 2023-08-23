@@ -3,7 +3,7 @@ Option Explicit
 ' ________________________________________________________________________________________________
 Sub import_messages_from_outlook()
 
-' Import Outlook library first.
+' Import Outlook library first (e.g. Microsoft Outlook 16.0 Object Library)
 Dim objOutFolder As Outlook.MAPIFolder
 
 Dim dteMax As Date
@@ -14,7 +14,7 @@ Dim wksSheet as Worksheet
 Set wksSheet = Sheet1
 
 On Error GoTo Error_Handler
-
+' The directory name has to be equal to the directory name in the mailbox.
 Set objOutFolder = GetObject("", "Outlook.Application").GetNamespace("MAPI").GetDefaultFolder(olFolderInbox).Folders("Subfolder_To_Inbox")
 
 lngMsgGes = objOutFolder.Items.Count
