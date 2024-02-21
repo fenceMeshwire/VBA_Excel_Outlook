@@ -44,7 +44,6 @@ With oFromCondition
 End With
 
 ' Specify the action in a MoveOrCopyRuleAction object
-
 Set oMoveRuleAction = oRule.Actions.MoveToFolder
 
 With oMoveRuleAction
